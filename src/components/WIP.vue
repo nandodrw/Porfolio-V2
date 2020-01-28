@@ -4,18 +4,17 @@
     v-bind:class="{ hidden: !animationDone, show: preludeDone }"
   >
     <p>
-      This portfolio page is in active development, so internal sections are not
-      ready yet.
+      This portfolio page is in active development, so internal sections are not ready yet.
     </p>
     <p>
-      If you would like to contact me, please do it througth my
+      If you would like to contact me, please do it through my
       <a href="https://www.linkedin.com/in/fernandocatacora/" target="_blank"
         >LinkedIn page</a
       >.
     </p>
-    <p>Thanks for you patien, please coma back soon for news ;)</p>
+    <p>Thanks for your patience, please come back soon for news ;)</p>
 
-    <button v-on:click="goBack()">[ Return to home ]</button>
+    <button v-on:click="goBack()">[ Return home ]</button>
   </div>
 </template>
 
