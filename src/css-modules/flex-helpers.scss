@@ -1,0 +1,30 @@
+// Container level styles
+.flex {
+  display: flex;
+  
+  &.content-center {
+    justify-content: center;
+  }
+
+  &.content-start {
+    justify-content: flex-start;
+  }
+  
+  &.align-center {
+    align-self: center;
+  }
+
+  &.align-start {
+    align-items: flex-start;
+  }
+
+  &.align-end {
+    align-items: flex-end;
+  }
+
+  
+}
+
+.align-self-center {
+  align-self: center;
+}

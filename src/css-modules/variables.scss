@@ -1,0 +1,142 @@
+@use "sass:color";
+@use "sass:meta";
+
+// ***************** BREAKS for RESPONSIVE **************/
+// Max styles break point
+
+$ipad-pro-landscape: 1366px;
+$big-monitor-landscape: 1367px;
+$phone-landscape: 1000px;
+$phone-portrait: 800px;
+$big-tablet-portrait: 801px;
+
+// *****************  COSMIC COLORS *********************/
+
+// Soft low poly colors
+$figs-in-space: #01164A;
+$dark-purple: #2c3e50;
+$hipster-brown: #D78162;
+$kiss: #2DA589;
+$kiss-red: #FF275A;
+$Portsmouth: #2DAA8A;
+$cartoon-light-blue: #668be9;
+$cartoon-grey: #bdece6;
+$plain-white: #ffffff;
+$antiquewhite: #faebd7;
+$electric-green: #11e8bb;
+$plain-green: #2DA589;
+$plain-purple: #8200c9;
+
+$sun-shiny: #ddeeff;
+$dark-shadow: #202020;
+
+// $hight-contrast-light: $plain-white;
+// $main-dark: $figs-in-space;
+// $dark-text: $dark-purple;
+// $dark-complement: $kiss-red;
+// $patel-light: $antiquewhite;
+// $call-to-action: $cartoon-light-blue;
+// $call-to-action-complement: $cartoon-grey;
+
+// Planet
+// $planet-middle-tone: $electric-green;
+
+// Lights 
+// $ambient-1: $electric-green; 
+// $ambient-2: $plain-purple;
+// $ambient-3: $sun-shiny;
+// $ambient-4: $dark-shadow;
+
+// **************************************/
+
+// *****************  POP COLORS *********************/
+
+$sexy-carmin: #a20d28;
+$turquoise-celeste: #4d97b1;
+$turquoise-aqua: #3aecde;
+$glow-yellow: #f5dd49;
+$glow-grey: #112840;
+$glow-brown: #521321;
+
+$plain-blue: #210ba2;
+$heaven-yellow: #fad12a;
+$heaven-yellow-2: #f3e29d;
+$nature-purple: #0c1564;
+$dark-leaf-green: #203f08;
+$strong-pink: #e00269;
+
+$semi-dark-orange: #fdb331;
+$dark-orange: #fb7128;
+$chicle-orange: #e24d46;
+$purple-orange: #7a4b65;
+$violet-orange: #211134;
+
+$gree-to-orange-sky1: #023f5b;
+$gree-to-orange-sky2: #434c51;
+$gree-to-orange-sky3: #fc9435;
+$gree-to-orange-sky4: #ff6727;
+$gree-to-orange-sky5: #46867f;
+$gree-to-orange-sky6: #187172;
+
+$hight-contrast-light: $plain-white;
+$main-dark: $glow-yellow;
+$dark-text: $nature-purple;
+$dark-complement: $sexy-carmin;
+$patel-light: $antiquewhite;
+$call-to-action: $gree-to-orange-sky6;
+$call-to-action-complement: $glow-yellow;
+
+// Planet
+$planet-middle-tone: $electric-green;
+
+// Lights 
+$ambient-1: $semi-dark-orange; 
+$ambient-2: $plain-purple;
+$ambient-3: $sun-shiny;
+$ambient-4: $dark-shadow;
+
+:export {
+  hightContrastLight: $hight-contrast-light;
+  mainDark: $main-dark;
+  darkText: $dark-text;
+  darkComplement: $dark-complement;
+  patelLight: $patel-light;
+  callToAction: $call-to-action;
+  callToActionComplement: $call-to-action-complement;
+  ambient1: $ambient-1;
+  ambient2: $ambient-2;
+  ambient3: $ambient-3;
+  ambient4: $ambient-4;
+  planetMiddleTone: $gree-to-orange-sky3;
+  planetOutline: #000000;
+  particlesBody: $turquoise-aqua;
+}
+
+// Transparencies
+$background-transparency: 0.42;
+$background-middle-transparency: 0.2;
+$readable-transparent-background: 0.1;
+
+
+:root {
+  --main-dark: #{$main-dark};
+  --main-dark-transparent: #{transparentize($main-dark, $background-transparency)};
+  --secondary-transparent: #{transparentize($patel-light, $background-middle-transparency)};
+  --mobile-menu-background: #{transparentize($gree-to-orange-sky1, $readable-transparent-background)};
+  --wip-background: #{transparentize($violet-orange, $readable-transparent-background)};
+  --hight-contrast-light: #{ $hight-contrast-light};
+  --dark-text: #{$dark-text};
+  --dark-complement: #{$dark-complement};
+  --patel-light: #{$patel-light};
+  --call-to-action: #{$call-to-action};
+  --call-to-action-complement: #{$call-to-action-complement};
+
+  --background-gradient-step-1: #{$sexy-carmin};
+  --background-gradient-step-1-2: #{$semi-dark-orange};
+  --background-gradient-step-2: #{$gree-to-orange-sky3};
+  --background-gradient-step-3: #{$turquoise-celeste};
+  --background-gradient-step-4: #{$nature-purple};
+  --navigation-text: #{#ffffff};
+  --main-name-text: #{#ffffff};
+  --skill-statement-font: $nature-purple;
+}
