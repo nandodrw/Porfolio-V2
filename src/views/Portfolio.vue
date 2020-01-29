@@ -95,6 +95,12 @@
     grid-row: 2 / 3;
     justify-content: flex-end;
   }
+
+  @include for_breakpoint(thin-phone-landscape) {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    justify-content: flex-end;
+  }
 }
 
 .item-me {

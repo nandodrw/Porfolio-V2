@@ -49,6 +49,13 @@
     font-size: 1em;
   }
 
+  @include for_breakpoint(thin-phone-landscape) {
+    width: 100%;
+    font-size: 0.9em;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   &.show {
     height: 18.5em;
     padding-top: 1em;
@@ -60,6 +67,10 @@
 
     @include for_breakpoint(phone-portrait) {
       height: 26em;
+    }
+
+    @include for_breakpoint(thin-phone-landscape) {
+      height: 13em;
     }
   }
 

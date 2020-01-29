@@ -11,6 +11,7 @@ $media_queries : (
     'phone-landscape'   : string.unquote("only screen and (max-width: #{$phone-landscape}) and (orientation:landscape)"),
     'phone-portrait'   : string.unquote("only screen and (max-width: #{$phone-portrait}) and (orientation:portrait)"),
     'large-tablet-portrait'   : string.unquote("only screen and (min-width: #{$big-tablet-portrait}) and (orientation:portrait)"),
+    'thin-phone-landscape'   : string.unquote("only screen and (max-height: #{$thin-phone-landscape}) and (orientation:landscape)"),
     // 'desktop'   : "only screen and (min-width: ($size__site_content_width + 1))",
     // 'retina2'   : "only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)",
     // 'retina3'   : "only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi)",
